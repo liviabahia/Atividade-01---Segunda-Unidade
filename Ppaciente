@@ -1,0 +1,33 @@
+package clinicamedica;
+public class Ppaciente {
+public static void main(String[] args){
+      Ppaciente p = new Ppaciente(1, "João Pedro de Carvalho", "28/06/2002", "Masculino", "Mais Vida", "dipirona", "AB");
+      System.out.println("\nCodigo:" + p.codigo);
+      System.out.println("Paciente:" + p.nome);
+      System.out.println("Nascido em:" + p.dataNascimento);
+      System.out.println("Sexo:" + p.sexo);
+      System.out.println("Plano de Saúde:" + p.planoSaude);
+      System.out.println("Alergia:" + p.alergia);
+      System.out.println("Tipo Sanguíneo:" + p.tipoSanguineo + "\n");
+     
+      p.codigo = p.codigo + 1;
+      p.nome = "Maria Lina";
+      p.dataNascimento = "02/02/2002";
+      p.sexo = "Feminino";
+      p.alergia = "Lírio";
+      p.planoSaude = "Happy";
+      p.tipoSanguineo = "O+";
+      
+      System.out.println("\nCodigo:" + p.codigo);
+      System.out.println("Paciente:" + p.nome);
+      System.out.println("Nascido em:" + p.dataNascimento);
+      System.out.println("Sexo:" + p.sexo);
+      System.out.println("Plano de Saúde:" + p.planoSaude);
+      System.out.println("Alergia:" + p.alergia);
+      System.out.println("Tipo Sanguíneo:" + p.tipoSanguineo + "\n");
+     
+      
+      
+      
+      }
+    }

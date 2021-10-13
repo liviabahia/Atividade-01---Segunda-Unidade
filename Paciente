@@ -1,0 +1,14 @@
+package clinicamedica;
+public class Paciente {
+  int codigo; 
+  String nome, dataNascimento, sexo, planoSaude, alergia, tipoSanguineo;
+  public Paciente(int codigo, String nome, String dataNasc, String sexo, String planoS, String alergia, String tipoS){
+    this.codigo = codigo;
+    this.nome = nome;
+    this.dataNascimento = dataNasc;
+    this.sexo = sexo;
+    this.planoSaude = planoS;
+    this.alergia = alergia;
+    this.tipoSanguineo = tipoS;
+     }
+    }

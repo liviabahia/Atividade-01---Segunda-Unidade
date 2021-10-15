@@ -1,4 +1,4 @@
-public class lutador {
+public class Lutador {
   int energia, forca; static int golpe; String nome) {
     this.energia = energia;
     this.forca = forca;

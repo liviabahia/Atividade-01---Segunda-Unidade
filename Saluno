@@ -1,7 +1,7 @@
-public class aluno {
+public class Saluno {
    String nome, cpf; 
    Double nota1, nota2, nota3; 
-   public saluno(String nome, String cpf){ 
+   public Saluno(String nome, String cpf){ 
      this.nome = nome; 
      this.cpf = cpf; 
      } 

@@ -1,0 +1,36 @@
+public class mmedico {
+ 
+   public static void main(String args[]) { 
+     endereco lugar = new endereço("269","48800", "Rua Sabino", "Casa", "Centro", "Monte Santo", "BA" );
+     medico cons = new medico(1, "Fernanda Siz","Feminino", "Fonoaudióloga", lugar);
+     
+    System.out.println("\nFicha Médica"");
+    System.out.println("Código:" + cons.codigo);
+    System.out.println("Doutora:" + cons.nome);
+    System.out.println("Sexo:" + cons.sexo);
+    System.out.println("Especialidade:" + cons.especialidade);
+    System.out.println("\nEndereço:" + cons.getEndereco());
+    
+    lugar.numero = "202";
+    lugar.cep = "48800";
+    lugar.rua = "Rua Senhor dos Passos";
+    lugar.complemento = "Apartamento";
+    lugar.bairro = "Centro";
+    lugar.cidade = "Paraty"; 
+    lugar.uf = "RJ";
+    
+    cons.codigo = 2; 
+    cons.nome = "Guilherme Aquino"; 
+    cons.sexo = "Masculino"; 
+    cons.especialidade = "Otorrinolaringologista";
+    
+    System.out.println("\nFicha Médica"");
+    System.out.println("Código:" + cons.codigo);
+    System.out.println("Doutora:" + cons.nome);
+    System.out.println("Sexo:" + cons.sexo);
+    System.out.println("Especialidade:" + cons.especialidade);
+    System.out.println("\nEndereço:" + cons.getEndereco());
+    
+    
+   }
+ }

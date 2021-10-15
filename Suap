@@ -1,9 +1,9 @@
-public class suap 
+public class Suap 
  {
    public static void main(String args[])
    { 
      double media;
-     saluno m = new saluno("Maria Liz", "20022002" );
+     Saluno m = new saluno("Maria Liz", "20022002" );
      m.n1 = 9.00;
      m.n2 = 8.00;
      m.n3 = 9.00;

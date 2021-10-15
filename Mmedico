@@ -1,4 +1,4 @@
-public class mmedico {
+public class Mmedico {
  
    public static void main(String args[]) { 
      endereco lugar = new endereço("269","48800", "Rua Sabino", "Casa", "Centro", "Monte Santo", "BA" );

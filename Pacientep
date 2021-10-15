@@ -1,7 +1,7 @@
 package clinicamedica;
-public class pacientep {
+public class Pacientep {
 public static void main(String[] args){
-      pacientep p = new pacientep(1, "João Pedro de Carvalho", "28/06/2002", "Masculino", "Mais Vida", "dipirona", "AB");
+      Pacientep p = new Pacientep(1, "João Pedro de Carvalho", "28/06/2002", "Masculino", "Mais Vida", "dipirona", "AB");
       System.out.println("\nCodigo:" + p.codigo);
       System.out.println("Paciente:" + p.nome);
       System.out.println("Nascido em:" + p.dataNascimento);

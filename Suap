@@ -1,0 +1,18 @@
+public class suap 
+ {
+   public static void main(String args[])
+   { 
+     double media;
+     aluno m = new aluno("Maria Liz", "20022002" );
+     m.n1 = 9.00;
+     m.n2 = 8.00;
+     m.n3 = 9.00;
+     media = m.calcularMedia();
+     
+    System.out.println("\nMedia: %.2f", media);
+    m.n2 = 9.00;
+    media = m.calcularMedia();
+    
+    System.out.println("\nMedia: %.2f", media);
+   }
+ }

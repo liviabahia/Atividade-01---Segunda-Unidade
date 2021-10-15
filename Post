@@ -1,7 +1,7 @@
-public class post {
+public class Post {
   String texto, link;
   int numCurtidas, numComp;
-  public post(String texto, String link){
+  public Post(String texto, String link){
     this.texto = texto;
     this.link = link;
   }

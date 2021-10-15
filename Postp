@@ -1,13 +1,13 @@
-public class postp {
+public class Postp {
   
    public static void main(String args[])
    { 
-     post w = new post("Café com leite ♡", "https://youtu.be/kjIgcgqqh38"); 
+    Post w = new Post("Café com leite ♡", "https://youtu.be/kjIgcgqqh38"); 
     w.curtir();
     w.curtir();
     w.curtir();
     
-    System.out.println("\nCurtidas:" +w.numCurtidas);
+    System.out.println("\nCurtidas:" + w.numCurtidas);
     
     w.compartilhar();
     w.compartilhar();

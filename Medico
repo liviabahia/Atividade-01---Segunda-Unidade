@@ -1,0 +1,16 @@
+public class medico {
+   int codigo;
+   String nome, sexo, especialidade, endereco;
+   public medico(int codigo, String nome, String sexo, String especialidade, String endereco){
+     
+     this.codigo = codigo;
+     this.nome = nome;
+     this.sexo = sexo;
+     this.especialidade;
+     this.endereco = endereco;
+   }
+   public String endereco = getEndereco(){
+     return "Estado:" +this.endereco.uf + "\nCep:" +this.endereco.cep + "\nCidade" +this.endereco.cidade + "\nBairro:" + this.endereco.bairro + "\nRua:" +this.endereco.rua + "\nComplemento:" + this.enderco.complemento + "\nNúmero:" +this.endereco.numero; 
+   }
+
+ }

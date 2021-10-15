@@ -1,7 +1,7 @@
-public class medico {
+public class Medico {
    int codigo;
    String nome, sexo, especialidade, endereco;
-   public medico(int codigo, String nome, String sexo, String especialidade, String endereco){
+   public Medico(int codigo, String nome, String sexo, String especialidade, String endereco){
      
      this.codigo = codigo;
      this.nome = nome;

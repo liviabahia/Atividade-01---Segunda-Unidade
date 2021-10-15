@@ -1,0 +1,16 @@
+public class lutador {
+  int energia, forca; static int golpe; String nome) {
+    this.energia = energia;
+    this.forca = forca;
+    this.nome = nome; 
+  } 
+  public void aplicarGolpe(lutador um){
+    golpe = this.forca;
+    um.reduzirEnergia();
+   
+  }
+  public void reduzirEnergia();
+  this.energia - = golpe;
+}
+ }
+   

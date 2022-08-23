@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+ <head></head>
+ <body>
+   Primeira nota do usuário 
+  <input id="notausuario1" type="number"> 
+  <br> Segunda nota do usuário 
+  <input id="notausuario2" type="number"> 
+  <br> Terceira nota do usuário 
+  <input id="notausuario3" type="number"> 
+  <br> 
+  <button onclick="medianotas()">Calcular Média das Notas</button> 
+  <script type="text/javascript">
+        function medianotas(){
+            var notausuario1 = parseFloat(document.getElementById("notausuario1").value);
+            var notausuario2 = parseFloat(document.getElementById("notausuario2").value);
+            var notausuario3 = parseFloat(document.getElementById("notausuario3").value);
+
+            var medianotas = (notausuario1+notausuario2+notausuario3)/3;
+            document.write("A MÉDIA DO USUÁRIO EQUIVALE A: ", medianotas)
+        }
+
+            </script>   
+ </body>
+</html>

@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+ <head></head>
+ <body>
+   Primeiro número 
+  <input id="n1" type="number"> 
+  <br> Segundo número 
+  <input id="n2" type="number"> 
+  <br> Terceiro número 
+  <input id="n3" type="number"> 
+  <br> Quarto número 
+  <input id="n4" type="number"> 
+  <br> Quinto número 
+  <input id="n5" type="number"> 
+  <br> 
+  <button onclick="quantidademaiores()">Ver quantidade de pessoas maiores de 18</button> 
+  <button onclick="quantidademenores()">Ver quantidade de pessoas menores de 18</button> 
+  <script type="text/javascript">
+
+        function quantidademaiores(){
+            maiordeidade=0;
+            var n1 = parseFloat(document.getElementById("n1").value);
+            var n2 = parseFloat(document.getElementById("n2").value);
+            var n3 = parseFloat(document.getElementById("n3").value);
+            var n4= parseFloat(document.getElementById("n4").value);
+            var n5 = parseFloat(document.getElementById("n5").value);
+
+            if(n1>=18){
+                maiordeidade+=1
+            }
+            if(n2>=18){
+                maiordeidade+=1
+            }
+            if(n3>=18){
+                maiordeidade+=1
+            }
+            if(n4>=18){
+                maiordeidade+=1
+            }
+            if(n5>=18){
+                maiordeidade+=1
+            }
+            document.write("A quantidade de pessoas maiores de idade é: "+maiordeidade)
+        }
+       
+        function quantidademenores(){
+            menordeidade=0;
+            var n1 = parseFloat(document.getElementById("n1").value);
+            var n2 = parseFloat(document.getElementById("n2").value);
+            var n3 = parseFloat(document.getElementById("n3").value);
+            var n4= parseFloat(document.getElementById("n4").value);
+            var n5 = parseFloat(document.getElementById("n5").value);
+
+            if(n1<18){
+                menordeidade +=1
+            }
+            if(n2<18){
+                menordeidade +=1
+            }
+            if(n3<18){
+                menordeidade +=1
+            }
+            if(n4<18){
+                menordeidade +=1
+            }
+            if(n5<18){
+                menordeidade +=1
+            }
+           document.write("A quantidade de pessoas menores de idade é: "+menordeidade)
+        } 
+
+            </script>   
+ </body>
+</html>

@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+ <head></head>
+ <body>
+   Primeiro número 
+  <input id="n1" type="number"> 
+  <br> Segundo número 
+  <input id="n2" type="number"> 
+  <br> Terceiro número 
+  <input id="n3" type="number"> 
+  <br> Quarto número 
+  <input id="n4" type="number"> 
+  <br> Quinto número 
+  <input id="n5" type="number"> 
+  <br> 
+  <button onclick="numeromaximo()">Calcular o Maior Valor</button> 
+  <script type="text/javascript">
+
+        function numeromaximo(){
+
+            var n1 = parseFloat(document.getElementById("n1").value);
+            var n2 = parseFloat(document.getElementById("n2").value);
+            var n3 = parseFloat(document.getElementById("n3").value);
+            var n4= parseFloat(document.getElementById("n4").value);
+            var n5 = parseFloat(document.getElementById("n5").value);
+
+            maiorvalor = Math.max(n1,n2,n3,n4,n5);
+            document.write("O MAIOR VALOR ENTRE OS NÚMEROS É: "+maiorvalor)
+        }
+            </script>   
+ </body>
+</html>

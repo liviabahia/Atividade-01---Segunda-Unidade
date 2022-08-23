@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+ <head></head>
+ <body>
+   Primeiro número 
+  <input id="n1" type="number"> 
+  <br> Segundo número 
+  <input id="n2" type="number"> 
+  <br> Terceiro número 
+  <input id="n3" type="number"> 
+  <br> Quarto número 
+  <input id="n4" type="number"> 
+  <br> Quinto número 
+  <input id="n5" type="number"> 
+  <br> 
+  <button onclick="quadrado()">Mostrar Quadrado dos Números</button> 
+  <button onclick="cubo()">Mostrar Cubo dos Números</button> 
+  <script type="text/javascript">
+
+        function quadrado(){
+            var n1 = parseFloat(document.getElementById("n1").value);
+            var n2 = parseFloat(document.getElementById("n2").value);
+            var n3 = parseFloat(document.getElementById("n3").value);
+            var n4= parseFloat(document.getElementById("n4").value);
+            var n5 = parseFloat(document.getElementById("n5").value);
+
+            var quadrado1 = n1*n1;
+            var quadrado2 = n2*n2;
+            var quadrado3 = n3*n3;
+            var quadrado4 = n4*n4;
+            var quadrado5 = n5*n5;
+
+            document.write("O quadrado do número "+n1+" equivale a: "+quadrado1+"<br>");
+            document.write("O quadrado do número "+n2+" equivale a: "+quadrado2+"<br>");
+            document.write("O quadrado do número "+n3+" equivale a: "+quadrado3+"<br>");
+            document.write("O quadrado do número "+n4+" equivale a: "+quadrado4+"<br>");
+            document.write("O quadrado do número "+n5+" equivale a: "+quadrado5+"<br>");
+        }
+        function cubo(){
+            var n1 = parseFloat(document.getElementById("n1").value);
+            var n2 = parseFloat(document.getElementById("n2").value);
+            var n3 = parseFloat(document.getElementById("n3").value);
+            var n4= parseFloat(document.getElementById("n4").value);
+            var n5 = parseFloat(document.getElementById("n5").value);
+
+            var cubo1 = n1*n1*n1;
+            var cubo2 = n2*n2*n2;
+            var cubo3 = n3*n3*n3;
+            var cubo4 = n4*n4*n4;
+            var cubo5 = n5*n5*n5;
+
+            document.write("O cubo do número "+n1+" equivale a: "+cubo1+"<br>");
+            document.write("O cubo do número "+n2+" equivale a: "+cubo2+"<br>");
+            document.write("O cubo do número "+n3+" equivale a: "+cubo3+"<br>");
+            document.write("O cubo do número "+n4+" equivale a: "+cubo4+"<br>");
+            document.write("O cubo do número "+n5+" equivale a: "+cubo5+"<br>");
+        }
+
+            </script>   
+ </body>
+</html>

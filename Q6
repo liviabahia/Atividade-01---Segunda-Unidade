@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+ <head></head>
+ <body>
+   Nome1 
+  <input id="n1" type="text"> 
+  <br> Nome2 
+  <input id="n2" type="text"> 
+  <br> Nome3 
+  <input id="n3" type="text"> 
+  <br> Nome 4 
+  <input id="n4" type="text"> 
+  <br> 
+  <button onclick="orginverso()">Reorganizar nomes</button> 
+  <script type="text/javascript">
+
+        function orginverso(){
+            var n1 = (document.getElementById("n1").value);
+            var n2 = (document.getElementById("n2").value);
+            var n3 = (document.getElementById("n3").value);
+            var n4 = (document.getElementById("n4").value);
+         
+        
+           
+            document.write(" "+n4+" "+n3+" "+n2+" "+n1)
+        }
+       
+        
+            </script>   
+ </body>
+</html>

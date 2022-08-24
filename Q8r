@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>---QUESTAO 8---</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        
+        <script>
+            var grupo1 = new Array();
+            var grupo2 = new Array();
+
+            function grupoUm() {
+                var acrescentar = grupo1.push(document.getElementById("participante").value);
+            }
+
+            function grupoDois() {
+                var acrescentar = grupo2.push(document.getElementById("participante").value);
+            }
+
+            function exibir(){
+                $('h2').empty().append("<br>Primeira lista: "+grupo1+"<br>Segunda lista: "+grupo2);
+            }
+
+            function ocultar(){    
+                $('h2').empty().append(" ");
+            }
+
+        </script>
+    </head>
+    <body>
+        <label>Escreva o nome do participante: </label>
+        <input type="text" name="Nome" id="participante">
+        <br>
+        <br>
+        <button onclick="grupoUm()">Entar no grupo 1</button>        
+        <br>
+        <br>
+        <button onclick="grupoDois()">Entrar no grupo 2</button>
+        <br>
+        <br>
+        <button onclick="exibir()">Mostrar</button>
+        <br>
+        <br>
+        <button onclick="ocultar()">Ocultar</button>
+        <h2></h2>
+    </body>
+</html>

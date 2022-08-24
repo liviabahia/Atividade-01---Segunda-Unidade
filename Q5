@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+ <head></head>
+ <body>
+   Pessoa1 altura 
+  <input id="n1" type="number"> 
+  <br> Pessoa1 sexo (F OU M) 
+  <input id="s1" type="text"> 
+  <br> Pessoa2 altura 
+  <input id="n2" type="number"> 
+  <br> Pessoa2 sexo (F OU M) 
+  <input id="s2" type="text"> 
+  <br> Pessoa3 altura 
+  <input id="n3" type="number"> 
+  <br> Pessoa3 sexo (F OU M) 
+  <input id="s3" type="text"> 
+  <br> Pessoa4 altura 
+  <input id="n4" type="number"> 
+  <br> Pessoa4 sexo (F OU M) 
+  <input id="s4" type="text"> 
+  <br> Pessoa5 altura 
+  <input id="n5" type="number"> 
+  <br> Pessoa5 sexo (F OU M) 
+  <input id="s5" type="text"> 
+  <br> 
+  <button onclick="quantidadesexosmasculino()">Ver quantas pessoas são do sexo masculino</button> 
+  <button onclick="quantidadesexosfeminino()">Ver quantas pessoas são do sexo feminino</button> 
+  <button onclick="maioraltura()">Ver qual a maior altura</button> 
+  <script type="text/javascript">
+
+        function quantidadesexosmasculino(){
+            sexomasculino=0;
+            var s1 = (document.getElementById("s1").value);
+            var s2 = (document.getElementById("s2").value);
+            var s3 = (document.getElementById("s3").value);
+            var s4 = (document.getElementById("s4").value);
+            var s5 = (document.getElementById("s5").value);
+
+            if(s1=="M"){
+                sexomasculino+=1
+            }
+            if(s2=="M" ){
+                sexomasculino+=1
+            }
+            if(s3=="M"){
+                sexomasculino+=1
+            }
+            if(s4=="M"){
+                sexomasculino+=1
+            }
+            if(s5=="M"){
+                sexomasculino+=1
+            }
+            document.write("A quantidade de pessoas do sexo masculino é: "+sexomasculino)
+        }
+       
+        function quantidadesexosfeminino(){
+            sexofeminino=0;
+            var s1 = (document.getElementById("s1").value);
+            var s2 = (document.getElementById("s2").value);
+            var s3 = (document.getElementById("s3").value);
+            var s4 = (document.getElementById("s4").value);
+            var s5 = (document.getElementById("s5").value);
+
+            if(s1=="F"){
+                sexofeminino +=1
+            }
+            if(s2=="F"){
+                sexofeminino +=1
+            }
+            if(s3=="F"){
+                sexofeminino +=1
+            }
+            if(s4=="F"){
+                sexofeminino +=1
+            }
+            if(s5=="F"){
+                sexofeminino +=1
+            }
+           document.write("A quantidade de pessoas do sexo feminino é: "+sexofeminino)
+        } 
+        function maioraltura(){
+            
+            var n1 = (document.getElementById("n1").value);
+            var n2 = (document.getElementById("n2").value);
+            var n3 = (document.getElementById("n3").value);
+            var n4 = (document.getElementById("n4").value);
+            var n5 = (document.getElementById("n5").value);
+
+            var altura = Math.max(n1,n2,n3,n4,n5);
+            document.write("A maior altura é: "+altura)
+        }
+            </script>   
+ </body>
+</html>

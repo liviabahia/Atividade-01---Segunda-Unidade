@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lista js q7</title>
+    </head>
+    <body style = "text-aling:center;">
+
+        <h1 style ="color: yellow; "></h1>
+        <h1 style ="color: green; "></h1>
+        <h1 style ="color: pink; "></h1>
+        <h1 style="color:  blue;"></h1>
+        <h1 style="color:  brown"></h1>
+ 
+        <button onclick = "amarelo()">
+            amarelo
+        </button>
+        <button onclick = "verde()">
+            verde
+        </button>
+        <button onclick = "rosa()">
+            rosa
+        </button>
+        <button onclick = "azul()">
+            azul
+        </button>
+        <button onclick = "marrom()">
+            marrom
+        </button>
+
+        <p id = "GFG_DOWN" style =
+        "color: yellow; font-size: 20px; font-weight: bold;">
+        </p>
+        <p id = "GFG_DOWN" style =
+        "color: green; font-size: 20px; font-weight: bold;">
+        </p>
+        <script>
+            var el_up = document.getElementById("GFG_UP");
+            var el_down= document.getElementById("GFG_UP");
+            var str="click on button to change the background color";
+            el_up.innerHTML = str;
+            
+            function changeColor(color){
+                document.body.style.background = color;
+            }
+            function amarelo(){
+                changeColor('yellow');
+                el_down.innerHTML="background clor changed";
+            }
+            function verde(){
+                changeColor('green');
+                el_down.innerHTML="background clor changed";
+            }
+            function rosa(){
+                changeColor('pink');
+                el_down.innerHTML="background clor changed";
+            }
+            function azul(){
+                changeColor('blue');
+                el_down.innerHTML="background clor changed";
+            }
+            function marrom(){
+                changeColor('brown');
+                el_down.innerHTML="background clor changed";
+            }
+        </script>
+    </body>
+</html
